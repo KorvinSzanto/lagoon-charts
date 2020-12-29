@@ -34,6 +34,8 @@ dockerHost:
     # If not set and create is true, a name is generated using the fullname
     # template
     name:
+    # set to true if you deploy the dockerhost to an openshift
+    isOpenshift: false
 
   podSecurityContext: {}
 
@@ -110,7 +112,7 @@ dioscuri:
 
   resources: {}
 
-  # this sidecar runs in the same pod as dioscuri
+  # this sidecar runs in the same pod as dioscurid
   kubeRBACProxy:
     image:
       repository: gcr.io/kubebuilder/kube-rbac-proxy
