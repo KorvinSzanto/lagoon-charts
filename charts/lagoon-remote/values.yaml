@@ -112,7 +112,7 @@ dioscuri:
 
   resources: {}
 
-  # this sidecar runs in the same pod as dioscurid
+  # this sidecar runs in the same pod as dioscuri
   kubeRBACProxy:
     image:
       repository: gcr.io/kubebuilder/kube-rbac-proxy
